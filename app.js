@@ -1,7 +1,7 @@
 const hambiBtn = document.querySelector('.hamburger');
 const closeBtn = document.querySelector('.close');
 const nav = document.querySelector('.navigation');
-const container = document.querySelector.('.container');
+const container = document.querySelector('.container');
 
 hambiBtn.addEventListener('click', function (e) {
   nav.classList.add('open');
