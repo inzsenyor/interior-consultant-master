@@ -7,12 +7,12 @@ hambiBtn.addEventListener('click', function (e) {
   nav.classList.add('open');
   hambiBtn.style.display = 'none';
   closeBtn.style.display = 'block';
-  container.style.overflowY = 'hidden';
+  bodyScrollLock.disableBodyScroll(document.body);
 });
 
 closeBtn.addEventListener('click', function (e) {
   nav.classList.remove('open');
   hambiBtn.style.display = 'block';
   closeBtn.style.display = 'none';
-  container.style.overflowY = 'scroll';
+  bodyScrollLock.enableBodyScroll(document.body);
 });
